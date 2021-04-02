@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+.ancho-contenedor{
+    margin-top: 100px;
+    max-width: 50%!important;
+    }
+
+.imagen{
+    position: absolute;
+    margin-left: -123px;
+    }
+
+.centro-contenido{
+    padding: 60px 60px 10px 60px;
+    }
+
+.labels{
+    font-family: 'Comfortaa', cursive;
+}
+
+.margen-fuente{
+    padding-left: 15px;
+}
+
+.barra-herramientas{
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10%;
+    column-gap: 25px;
+    row-gap: 15px;
+   }
+
+button:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0);
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.cursive{
+    font-style: italic;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+#muestrario{
+    height: 35px;
+    border-radius: 5px;
+}
+
+/*alineacion al centro*/
+.center{
+    text-align: center;
+}
+/*alineacion derecha*/
+.right{
+    text-align: right;
+}
+
+/*alineacion izquierda*/
+.left{
+    text-align: left;
+}
+
+.avatar{
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+}
+
+#botones{
+    padding-left: 30px;
+    margin-top: 85px;
+}
+
+.enviar-cancelar{
+    width: 130px;
+    height: 30px;
+    text-align: center;
+    margin-top: 70px;
+    padding-top: 5px;
+    font-family: 'Comfortaa', cursive;
+}
+
+#enviar{
+    padding-bottom: 25px;
+    text-align: center;
+    width: 133px;
+}
+
+#borrar{
+    color: black;
+    padding-bottom: 25px;
+    text-align:center;
+    width: 130px;
+}
+
+.iconos{
+    padding-right: 5px;
+}
+
+.fas i{
+    color: black;
+    font-weight: 600;
+}
+
+
+/*media queries*/
+@media only screen and (max-width: 768px) {
+    #botones{
+        margin-top:-20px;
+    }
+
+    #enviar{
+        margin-top: 10px;
+        width: 137px;
+        padding-right: 10px;
+    }
+
+    .contenedor-tarjeta{
+        margin-top: 10px;
+    }
+
+    #nombre, #puesto{
+        width: 160px;
+    }
+    .container{
+        background-color:#F5EBED;
+    }
+}
+
+
+
+    
+
+    
+      

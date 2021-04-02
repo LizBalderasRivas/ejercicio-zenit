@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseña tu tarjeta</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap-utilities.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;1,500;1,600&family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Roboto:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container ancho-contenedor border rounded border-primary border-3"> <!--Contenedor principal-->
+        <div>
+            <img class="imagen" src="assets/depositphotos_4757761-stock-illustration-set-of-funny-cartoon-office-removebg-preview (1).png" alt="avatar1">
+        </div>
+        <div class="row centro-contenido">
+            <div class="col-lg-12">
+                <div class="row">
+                    <h2 class="labels">Diseña tu tarjeta</h2>
+                    <div class="col-sm-12 col-m-12 col-lg-5">
+                        <span class="labels">Estilos de fuente</span>
+                        <div class="barra-herramientas"> <!--Div botones de estilos-->
+                            <div>
+                                <button type="button" class="btn btn-default border border-secondary" id="bold"> <!--Boton Negrita-->
+                                    <span><i class="fas fa-bold"></i></span>
+                                </button>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-default border border-secondary" id="cursive"> <!--Boton cursiva-->
+                                    <span><i class="fas fa-italic"></i></span>
+                                </button>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-default border border-secondary" id="underline"> <!--Boton subrayado-->
+                                    <span><i class="fas fa-underline"></i></span>
+                                </button>
+                            </div>
+                            <div> <!--boton color-->
+                                <input type="color" id="muestrario">
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-default border border-secondary" id="left"> <!--Boton alinear a la izquierda-->
+                                    <span><i class="fas fa-align-left"></i></span>
+                                </button>
+                           </div>
+                            <div>
+                                <button type="button" class="btn btn-default border border-secondary" id="center"> <!--Boton alinear al centro-->
+                                    <span><i class="fas fa-align-center"></i></span>
+                                </button>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-default border border-secondary" id="right"> <!--Boton alinear a la derecha-->
+                                    <span><i class="fas fa-align-right"></i></span>
+                                </button>
+                            </div>
+                        </div>
+                       <div class="d-flex flex-row">
+                            <div >
+                                <label class="labels" for="exampleFormControlSelect1">Fuente</label>
+                                <select name="item-0-status" id="id_item-0-status" class="form-select border-dark">
+                                    <option value="">Fuente seleccionada</option>
+                                    <option value="1">Montserrat</option>
+                                    <option value="2">Open Sans</option>
+                                    <option value="3">Roboto</option>
+                                    <option value="4">Arial</option>
+                                </select>
+                            </div>
+                            <div class="margen-fuente"> <!--tamaño de fuente-->
+                                <label class="labels" for="exampleFormControlSelect1">Tamaño</label>
+                                <select class="form-control border-dark" id="size">
+                                    <option>---</option>
+                                    <option>14</option>
+                                    <option>16</option>
+                                    <option>18</option>
+                                </select>
+                            </div>
+                        </div>
+                       <div class="d-flex flex-row"><!--Captura de nombre-->
+                            <div class="form-group">
+                                <label class="labels border-dark" for="exampleFormControlTextarea1">Nombre</label>
+                                <input id="nombre" type="text" placeholder="Texto del input">
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row"><!--Captura de puesto-->
+                            <div class="form-group">
+                                <label class="labels"for="exampleFormControlTextarea1">Puesto</label>
+                                <input id="puesto" type="text" placeholder="Texto del input">
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-sm-12 col-m-12 col-lg-7"><!--tarjeta creada-->
+                        <div class="contenedor-tarjeta border border-danger border border-2 rounded">
+                            <center><img src="assets/avatar2.png" class= "avatar"  alt="avatar"><br></center>
+                            <div id="content" class="box"></div>
+                        </div>
+                        <div class="row">
+                            <div id="botones">
+                                <button type="button" class="btn btn-danger enviar-cancelar" id="borrar"><i class="fas fa-ban iconos"></i>Cancelar</button>
+                                <button type="button" class="btn btn-primary enviar-cancelar" id="enviar"><i class="fas fa-paper-plane iconos"></i>Enviar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/js.js"></script>
+    
+    </body>
+</html>
